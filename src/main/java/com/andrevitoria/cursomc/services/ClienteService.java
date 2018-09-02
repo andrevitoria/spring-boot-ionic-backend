@@ -13,7 +13,7 @@ import com.andrevitoria.cursomc.services.exceptions.ObjectNotFoundException;
 public class ClienteService {
 	@Autowired
 	private ClienteRepository repo;
-	public Cliente buscar (Integer id) {
+	public Cliente find (Integer id) {
 		Optional<Cliente> obj = repo.findById(id);
 		//return obj.orElse(null);
 		return obj.orElseThrow(()-> new ObjectNotFoundException("Objeto não encontrado! Id: "+id + ", Tipo: "+Cliente.class.getName() ));
