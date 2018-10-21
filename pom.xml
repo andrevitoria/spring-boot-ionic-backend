@@ -59,10 +59,10 @@
 			<artifactId>mysql-connector-java</artifactId>
 		</dependency>
 		
-				<dependency>
+		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-mail</artifactId>
-			<scope>test</scope>
+			<!-- <scope>test</scope> tive e retirar para não dar erro bean na compilação-->
 		</dependency>
 	</dependencies>
 
